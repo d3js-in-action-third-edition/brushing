@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Evolution of democratic rights - brushing | D3.js in Action</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/visualization.css">
+</head>
+<body>
+	<div class="container">
+
+		<h1>Evolution of democratic rights</h1>
+		<div class="intro">
+			<p>Two centuries ago, only a handful of the world's population had access to democratic political rights. Closed autocracies were the norm in the 19th century, but a different picture appeared in the 20th century.</p>
+			<p>The chart below shows the number of people living in a liberal democracy over time. In a liberal democracy, citizens have multi-party, meaningful, free, and fair elections. All citizens are equal before the law, and the legislative and court systems constrain the elected government's actions.</p>
+			<div class="tip">
+				<svg width="16" height="16" fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16">
+					<path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z"/>
+				</svg>
+				<span>Drag the gray region on the lower chart or brush to change the focused area on the upper diagram.</span>
+			</div>
+		</div>
+		<div class="responsive-svg-container">
+			<div id="main-chart"></div>
+			<div id="brush-chart"></div>
+		</div>
+		
+		<div class="source">
+			<div>Data source: <a href="https://ourworldindata.org/democratic-rights">Our World in Data</a></div>
+			<div>Layout inspiration: <a href="https://observablehq.com/@d3/focus-context?collection=@d3/d3-brush">Focus + Context, by Mike Bostock</a></div>
+		</div>		
+	</div>
+
+	<!-- Load your scripts here -->
+	<script src="https://d3js.org/d3.v7.min.js"></script>
+	<script src="js/shared-constants.js"></script>
+	<script src="js/charts.js"></script>
+	<script src="js/interactions.js"></script>
+	<script src="js/load-data.js"></script>
+</body>
+</html>
